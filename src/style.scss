@@ -14,7 +14,7 @@ body {
     background-color: whitesmoke;
     display: grid;
     grid-template:
-        [title-row-start] "left title right" 50px [title-row-end]
+        [title-row-start] "left title right" 80px [title-row-end]
         [content-row-start] "left content right" auto [content-row-end]
         [footer-row-start] "left footer right" 50px [footer-row-end]
         / 1fr 10fr 1fr;
