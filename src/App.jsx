@@ -7,7 +7,7 @@ const App = () => (
   <BrowserRouter>
     <main className="container">
       <div className="title">
-        <h1>Products Information</h1>
+        <h1>React Assignment</h1>
       </div>
       <Routes />
     </main>
