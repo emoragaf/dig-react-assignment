@@ -5,13 +5,13 @@ import PropTypes from 'prop-types';
 import ProductDetail from '../components/ProductDetail';
 
 export default class Product extends Component {
+  static propTypes = {
+    match: PropTypes.shape().isRequired,
+  }
+
   state = {
     product: {},
     loaded: false,
-  }
-
-  static propTypes = {
-    match: PropTypes.shape().isRequired,
   }
 
   componentDidMount() {
