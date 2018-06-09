@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import PropTypes from 'propTypes';
 
 import ProductDetail from '../components/ProductDetail';
 
@@ -7,6 +8,10 @@ export default class Product extends Component {
   state = {
     product: {},
     loaded: false,
+  }
+
+  static propTypes = {
+    match: PropTypes.shape().isRequired,
   }
 
   componentDidMount() {
