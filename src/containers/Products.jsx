@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Card from '../components/Card';
+import ProductList from '../components/ProductList';
 
-export default class Home extends Component {
+export default class Products extends Component {
   state = {
     productIds: [],
     products: {},
@@ -25,11 +25,7 @@ export default class Home extends Component {
 
   render() {
     const { productIds, products } = this.state;
-    return (
-      <div className="grid">
-        { productIds.map(id => <Card key={id} product={products[id]} />) }
-      </div>
-    );
+    return (<ProductList products={products} productIds={productIds} />);
   }
 }
 
