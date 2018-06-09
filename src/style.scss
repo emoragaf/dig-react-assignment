@@ -31,7 +31,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    max-height: 200px;
+}
+
+.gridImage {
+    max-width: 100%;
 }
 
 .card {
@@ -41,4 +44,10 @@ body {
     border-width: 1px;
     border-color: white;
     background-color: white;
+    max-height: 350px;
+}
+
+.detail {
+    grid-area: content;
+    text-align: left;
 }
