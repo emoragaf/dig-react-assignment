@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Home } from './containers';
+
+import { Products, Product } from './containers';
 
 const Routes = () => (
   <Switch>
-    <Route exact path="/" component={Home} />
+    <Route exact path="/:prodID" component={Product} />
+    <Route exact path="/" component={Products} />
   </Switch>
 );
 

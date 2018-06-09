@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 const Card = ({ history, product }) => {
-  const showDetail = () => history.push(`/product/${product.id}`);
+  const showDetail = () => history.push(`/${product.id}`);
   return (
     <button className="card" onClick={showDetail}>
       <h3>
