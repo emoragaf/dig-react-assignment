@@ -28,10 +28,10 @@ body {
 .grid {
     grid-area: content;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    max-height: 300px;
+    max-height: 200px;
 }
 
 .card {
