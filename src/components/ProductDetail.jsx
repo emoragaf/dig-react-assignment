@@ -4,16 +4,16 @@ import shortid from 'shortid';
 import { Link } from 'react-router-dom';
 
 const ProductDetail = ({ product, loaded }) => {
-  const info = product => (
+  const info = item => (
     <div>
       <Link to="/">Back</Link>
       <h2>
-        {product.title}
+        {item.title}
       </h2>
-      <p>{product.description}</p>
+      <p>{item.description}</p>
       <div className="grid">
         {
-          true && product.images.map((image) => (
+          item.images.map(image => (
             <div className="gridImage" key={shortid.generate()}>
               <img className="gridImage" src={image.original} alt="" />
             </div>
